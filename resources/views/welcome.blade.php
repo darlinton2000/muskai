@@ -14,8 +14,10 @@
     </header>
 
     <main>
+        <h2>Gerador de receitas</h2>
+        <p>Encontre receitas deliciosas baseadas em seus ingredientes da geladeira - Inteligência Artificial transformando suas comidas em obra de arte!</p>
         <form>
-            <label>Digite algo</label>
+            <label>Digite, separado por vírgula os ingredientes que você possui na sua geladeira</label>
             <input type="text" />
             <input type="submit" value="Enviar" />
         </form>
