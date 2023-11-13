@@ -21,8 +21,8 @@
             <label>Ingredientes</label>
             <form method="POST" action="{{ route('ingredientesAcao') }}">
                 @csrf
-                <input type="text" name="ingredientes" />
-                <input type="submit" value="Enviar" value="{{ $ingredientes ?? '' }}" />
+                <input type="text" name="ingredientes" value="{{ $ingredientes ?? '' }}" />
+                <input type="submit" value="Bora cozinhar!" />
             </form>
         </article>
 

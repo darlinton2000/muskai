@@ -26,7 +26,7 @@ class HomeController extends Controller
         $response = $client->post('completions', [
             'json' => [
                 'model' => 'text-davinci-003',
-                'prompt' => 'Gere uma receita incrível somente com os seguintes ingredientes:' . $request->ingredientes,
+                'prompt' => 'Gere uma receita incrível somente com os seguintes ingredientes:' . $request->ingredientes . 'Não inclua ingredientes extras! Se não conseguir gerar a receita, responda: "Impossível, vá ao mercado"',
                 'temperature' => 0.5,
                 'max_tokens' => 500
             ]
