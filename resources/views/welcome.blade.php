@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MuskAI</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
     <header>
@@ -16,12 +17,18 @@
     <main>
         <h2>Gerador de receitas</h2>
         <p>Encontre receitas deliciosas baseadas em seus ingredientes da geladeira - Inteligência Artificial transformando suas comidas em obra de arte!</p>
-        <form>
-            <label>Digite, separado por vírgula os ingredientes que você possui na sua geladeira</label>
-            <input type="text" />
-            <input type="submit" value="Enviar" />
-        </form>
-        <p>Conteúdo Principal</p>
+        <article>
+            <label>Ingredientes</label>
+            <form method="POST" action="{{ route('ingredientesAcao') }}">
+                @csrf
+                <input type="text" name="ingredientes" />
+                <input type="submit" value="Enviar" value="{{ $ingredientes ?? '' }}" />
+            </form>
+        </article>
+
+        @if (!empty($receita))
+            {!! preg_replace("/\r\n|\n/", '<br>', $receita) !!}
+        @endif
     </main>
 
     <footer>
