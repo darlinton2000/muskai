@@ -15,7 +15,7 @@
     <nav>
         <a href="{{ route('home') }}">Home</a>
         <a href="{{ route('ingredientes') }}">Ingredientes</a>
-        <a href="/bonus">Bônus</a>
+        <a href="{{ route('copy') }}">Copy Generator</a>
     </nav>
 </header>
 

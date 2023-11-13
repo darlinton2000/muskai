@@ -17,7 +17,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="ingredientes">
         <h2>Gerador de receitas</h2>
         <p>Encontre receitas deliciosas baseadas em seus ingredientes da geladeira - Inteligência Artificial transformando suas comidas em obra de arte!</p>
         <article>
