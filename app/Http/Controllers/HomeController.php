@@ -8,9 +8,14 @@ use GuzzleHttp\Client;
 
 class HomeController extends Controller
 {
-    public function index(Request $request): view
+    public function index(): view
     {
-        return view('welcome');
+        return view('home');
+    }
+
+    public function ingredientes(Request $request): view
+    {
+        return view('ingredientes');
     }
 
     public function ingredientesAcao(Request $request): view
@@ -37,7 +42,7 @@ class HomeController extends Controller
             $viewData['ingredientes'] = $request->ingredientes;
             $viewData['receita'] = $data['choices'][0]['text'];
 
-            return view('welcome', $viewData);
+            return view('ingredientes', $viewData);
         } else {
             return ['error' => 'Deu algum erro!'];
         }

@@ -14,5 +14,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/ingredientes', [HomeController::class, 'ingredientes'])->name('ingredientes');
 Route::post('/ingredientes', [HomeController::class, 'ingredientesAcao'])->name('ingredientesAcao');

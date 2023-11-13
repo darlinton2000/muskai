@@ -11,7 +11,10 @@
 </head>
 <body>
     <header>
-        <h1>MuskAI 🤖</h1>
+        <h1>Gerador de Receitas 🤖</h1>
+        <nav>
+            <a href="{{ route('home') }}">Voltar</a>
+        </nav>
     </header>
 
     <main>
@@ -32,7 +35,7 @@
     </main>
 
     <footer>
-        B7Web - 2023
+        DLInfo - 2023
     </footer>
 </body>
 </html>
