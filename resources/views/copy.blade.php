@@ -32,10 +32,6 @@
                     <input type="number" name="preco_produto" required />
                 </p>
                 <p>
-                    <label>Preço do Produto</label>
-                    <input type="number" name="preco_produto" required />
-                </p>
-                <p>
                     <label>Características do Produto</label>
                     <input type="text" name="caracteristicas_produto" required />
                 </p>
@@ -56,8 +52,8 @@
             </form>
         </article>
 
-        @if (!empty($receita))
-            {!! preg_replace("/\r\n|\n/", '<br>', $receita) !!}
+        @if (!empty($copyGerada))
+            {!! preg_replace("/\r\n|\n/", '<br>', $copyGerada) !!}
         @endif
     </main>
 

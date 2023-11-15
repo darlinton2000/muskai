@@ -13,20 +13,9 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function copy(Request $request): view
-    {
-        return view('copy');
-    }
-
     public function ingredientes(Request $request): view
     {
         return view('ingredientes');
-    }
-
-    public function copyAcao(Request $request): view
-    {
-        dd($request->all());
-        return view('copy');
     }
 
     public function ingredientesAcao(Request $request): view
