@@ -20,7 +20,7 @@
 </header>
 
 <main>
-    <h2>Selecione no menu acima o sistema para acessar</h2>
+    <p style="text-align: center; font-size: 30px">Selecione no menu acima o sistema para acessar</p>
 </main>
 
 <footer>
