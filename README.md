@@ -6,6 +6,11 @@
 
 <hr/>
 
+Antes de inicializar o projeto, é necessário criar no .env a variável de ambiente OPENAI_API_KEY e posteriormente adicionar a sua key.<br/>
+Link: https://openai.com/
+
+<hr/>
+
 Tela Inicial
 
 ![01 - Página inicial](https://github.com/darlinton2000/muskai/assets/46008964/8811d7e2-1d51-416c-b894-ed32de1470d5)
